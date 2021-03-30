@@ -7,7 +7,7 @@ data:
   context: |
     myUsername: "414n" # ADD HERE YOUR USERNAME
   service.webhook.discord: |
-    url: "https://github.com/414n/GitOps-workshop" # ADD HERE YOUR URL
+    url: "https://discord.com/channels/771757608122056754/818845945788891167/823871025556750356" # ADD HERE YOUR URL
     headers:
     - name: Content-Type
       value: application/json
