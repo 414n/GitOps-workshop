@@ -7,7 +7,8 @@ We will then access the web interface to make sure that everything is in place.
 
 Use [kind](https://github.com/kubernetes-sigs/kind) to start a new local cluster.
 
-```
+```sh
+$ command -v systemctl || sudo mkdir -p /sys/fs/group/systemd
 $ kind create cluster --image=kindest/node:v1.19.7
 ```
 
