@@ -5,9 +5,9 @@ metadata:
   name: argocd-notifications-cm
 data:
   context: |
-    myUsername: "Jane Doe" # ADD HERE YOUR USERNAME
+    myUsername: "414n" # ADD HERE YOUR USERNAME
   service.webhook.discord: |
-    url: "" # ADD HERE YOUR URL
+    url: "https://github.com/414n/GitOps-workshop" # ADD HERE YOUR URL
     headers:
     - name: Content-Type
       value: application/json
@@ -17,7 +17,7 @@ data:
         method: POST
         body: |
           {
-            "content": ":white_check_mark: - {{.context.myUsername}} synced their application successfully! \n:rocket: -  URL: {{call .repo.FullNameByRepoURL .app.spec.source.repoURL}}",
+            "content": ":white_check_mark: - {{.context.myUsername}} finally synced their application successfully :scream:! \n:rocket: -  URL: {{call .repo.FullNameByRepoURL .app.spec.source.repoURL}} \n:alien: - ALL YOUR BASE ARE BELONG TO US :space_invader:",
             "username": "ArgoCD",
             "avatar_url": "https://cncf-branding.netlify.app/img/projects/argo/icon/color/argo-icon-color.png"
           }
